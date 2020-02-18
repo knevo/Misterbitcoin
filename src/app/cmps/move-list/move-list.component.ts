@@ -13,6 +13,9 @@ export class MoveListComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+    this.userService.currentUser$.subscribe(user => {
+      this.moves = this.userService.getMoveByContact(this.contactName)
+    })
   }
 
 }
