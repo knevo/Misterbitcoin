@@ -1,0 +1,9 @@
+<action-nav [contactId]="contact._id"></action-nav>
+<div class="details-container container">
+    <img [src]="'https://robohash.org/' + contact._id">
+    <p>Name: {{contact.name}}</p>
+    <p>Email: {{contact.email}}</p>
+    <p>Phone: {{contact.phone}}</p>
+    <transfer-fund class="transfer" [contactName]="contact.name"></transfer-fund>
+    <move-list [contactName]="contact.name"></move-list>
+</div>

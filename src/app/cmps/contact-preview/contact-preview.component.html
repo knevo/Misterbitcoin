@@ -1,0 +1,6 @@
+<a [routerLink]="['/contacts' , contact._id]">
+    <span class="img-wrapper">
+        <img [src]="'https://robohash.org/' + contact._id">
+    </span>
+    <span>{{contact.name}}</span>
+</a>

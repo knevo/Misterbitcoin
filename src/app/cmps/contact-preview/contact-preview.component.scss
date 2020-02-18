@@ -1,0 +1,18 @@
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+span.img-wrapper {
+  width: 70px;
+}
+span:nth-child(2) {
+  font-size: 25px;
+  color: #da851d;
+}
+a {
+  display: flex;
+  align-items: center;
+  background-color: #403d3d;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+    <form (submit)="onSubmit()" class="login">
+        <img src="assets/icons/coins.png" alt="">
+        <label for="name">Name</label>
+        <input [(ngModel)]="name" type="text" name='name' placeholder="name" id="name">
+        <small>{{validation}}</small>
+        <button>Login</button>
+    </form>
+</div>

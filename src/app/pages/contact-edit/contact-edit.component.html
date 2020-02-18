@@ -1,0 +1,10 @@
+<action-nav [contactId]="contact._id" [isEdit]="true" (onDelete)="onDelete($event)"></action-nav>
+<div class="contact-container container">
+    <label for="">Name</label>
+    <input placeholder="Name" type="text" [(ngModel)]="contact.name">
+    <label for="">Email</label>
+    <input placeholder="Email" type="text" [(ngModel)]="contact.email">
+    <label for="">Phone</label>
+    <input placeholder="Phone" type="text" [(ngModel)]="contact.phone">
+    <button (click)='onSave()'>Save</button>
+</div>

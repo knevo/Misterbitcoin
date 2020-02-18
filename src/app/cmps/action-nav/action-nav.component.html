@@ -1,0 +1,7 @@
+<div class="actions container">
+    <img (click)="goBack()" src="assets/icons/back.png" alt="">
+    <img *ngIf="!isEdit; else delete" [routerLink]="['/contacts/edit',contactId]" src="assets/icons/edit.png" alt="">
+    <ng-template #delete>
+        <img (click)="onDelete.emit(contactId)" src="assets/icons/delete.png">
+    </ng-template>
+</div>

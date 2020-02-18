@@ -1,0 +1,36 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  img {
+    margin-bottom: 20px;
+  }
+  button {
+    background-color: transparent;
+    border: 2px solid orange;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  small {
+    padding: 10px;
+    color: red;
+    font-size: 16px;
+  }
+  input {
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+  }
+  label {
+    font-size: 25px;
+    padding: 10px;
+    color: orange;
+  }
+}
+.container {
+  padding-top: 200px;
+}
